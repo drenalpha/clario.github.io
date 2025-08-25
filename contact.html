@@ -46,56 +46,32 @@
     max-width: 700px;
     margin: 100px auto 50px auto;
     padding: 20px;
+    text-align: center;
   }
 
   h1 {
     font-size: 2rem;
     margin-bottom: 15px;
-    text-align: center;
   }
 
   p {
     font-size: 0.95rem;
     margin-bottom: 20px;
-    text-align: center;
   }
 
-  /* Contact form */
-  form {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-    background: rgba(255,255,255,0.05);
-    padding: 20px;
-    border-radius: 8px;
-  }
-
-  input, textarea {
-    padding: 10px;
-    font-size: 0.95rem;
-    border: none;
-    border-radius: 5px;
-    outline: none;
-    width: 100%;
-  }
-
-  textarea {
-    resize: vertical;
-    min-height: 120px;
-  }
-
-  button {
+  .email-link {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 12px 20px;
     background: #4da6ff;
     color: #fff;
-    border: none;
-    padding: 12px;
-    font-size: 1rem;
-    border-radius: 5px;
-    cursor: pointer;
+    border-radius: 6px;
+    font-weight: 600;
+    text-decoration: none;
     transition: background 0.3s;
   }
 
-  button:hover {
+  .email-link:hover {
     background: #3388dd;
   }
 
@@ -126,15 +102,8 @@
     Whether you’re looking for guidance, want to learn more about my programs, or simply want to get in touch,  
     don’t hesitate to drop me a message.  
     I look forward to hearing from you and helping you on your journey to success!
-    Email me at nahom.eagle@gmail.com
   </p>
-
-  <form>
-    <input type="text" placeholder="Your Name" required>
-    <input type="email" placeholder="Your Email" required>
-    <textarea placeholder="Your Message" required></textarea>
-    <button type="submit">Send Message</button>
-  </form>
+  <a href="mailto:nahom.eagle@gmail.com" class="email-link">📩 Email Me</a>
 </div>
 
 <canvas id="stars"></canvas>
