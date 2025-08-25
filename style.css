@@ -1,0 +1,31 @@
+body, html {
+  margin: 0; padding: 0; height: 100%;
+  font-family: 'Arial', sans-serif;
+  background: linear-gradient(to top, #000020, #000033);
+  color: #fff;
+  overflow: hidden;
+}
+nav {
+  display: flex; justify-content: center;
+  background: rgba(0,0,0,0.7);
+  padding: 15px;
+  position: fixed; top: 0; left: 0; width: 100%;
+  z-index: 3;
+}
+nav a {
+  color: #fff; text-decoration: none; margin: 0 15px;
+  font-weight: bold; transition: color 0.3s;
+}
+nav a:hover { color: #00aaff; }
+.container {
+  position: relative; z-index: 2;
+  height: 75%; display: flex; flex-direction: column;
+  justify-content: center; align-items: center;
+  text-align: center; padding: 60px 20px 20px;
+}
+h1 { font-size: 3rem; margin: 0; }
+p { font-size: 1.2rem; margin-top: 10px; max-width: 600px; }
+canvas {
+  position: absolute; bottom: 0; left: 0;
+  width: 100%; height: 25%; z-index: 1;
+}
